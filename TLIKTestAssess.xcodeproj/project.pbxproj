@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB87D208219DC28900CD4A5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87D207219DC28900CD4A5A /* AppDelegate.swift */; };
+		BB87D20A219DC28900CD4A5A /* MostViewedHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87D209219DC28900CD4A5A /* MostViewedHomeViewController.swift */; };
+		BB87D20F219DC28D00CD4A5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB87D20E219DC28D00CD4A5A /* Assets.xcassets */; };
+		BB87D212219DC28D00CD4A5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB87D210219DC28D00CD4A5A /* LaunchScreen.storyboard */; };
+		BB87D21D219DC28D00CD4A5A /* TLIKTestAssessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87D21C219DC28D00CD4A5A /* TLIKTestAssessTests.swift */; };
+		BB87D228219DC28D00CD4A5A /* TLIKTestAssessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87D227219DC28D00CD4A5A /* TLIKTestAssessUITests.swift */; };
+		BB87D237219DC41400CD4A5A /* TLIKNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87D236219DC41400CD4A5A /* TLIKNavigationController.swift */; };
+		BB87D23B219DC6D400CD4A5A /* MostPopularTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87D239219DC6D400CD4A5A /* MostPopularTableViewCell.swift */; };
+		BB87D23C219DC6D400CD4A5A /* MostPopularTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB87D23A219DC6D400CD4A5A /* MostPopularTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB87D219219DC28D00CD4A5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB87D1FC219DC28900CD4A5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB87D203219DC28900CD4A5A;
+			remoteInfo = TLIKTestAssess;
+		};
+		BB87D224219DC28D00CD4A5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB87D1FC219DC28900CD4A5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB87D203219DC28900CD4A5A;
+			remoteInfo = TLIKTestAssess;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB87D204219DC28900CD4A5A /* TLIKTestAssess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLIKTestAssess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB87D207219DC28900CD4A5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB87D209219DC28900CD4A5A /* MostViewedHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostViewedHomeViewController.swift; sourceTree = "<group>"; };
+		BB87D20E219DC28D00CD4A5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB87D211219DC28D00CD4A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB87D213219DC28D00CD4A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB87D218219DC28D00CD4A5A /* TLIKTestAssessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TLIKTestAssessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB87D21C219DC28D00CD4A5A /* TLIKTestAssessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLIKTestAssessTests.swift; sourceTree = "<group>"; };
+		BB87D21E219DC28D00CD4A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB87D223219DC28D00CD4A5A /* TLIKTestAssessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TLIKTestAssessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB87D227219DC28D00CD4A5A /* TLIKTestAssessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLIKTestAssessUITests.swift; sourceTree = "<group>"; };
+		BB87D229219DC28D00CD4A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB87D236219DC41400CD4A5A /* TLIKNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLIKNavigationController.swift; sourceTree = "<group>"; };
+		BB87D239219DC6D400CD4A5A /* MostPopularTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularTableViewCell.swift; sourceTree = "<group>"; };
+		BB87D23A219DC6D400CD4A5A /* MostPopularTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB87D201219DC28900CD4A5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB87D215219DC28D00CD4A5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB87D220219DC28D00CD4A5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB87D1FB219DC28900CD4A5A = {
+			isa = PBXGroup;
+			children = (
+				BB87D206219DC28900CD4A5A /* TLIKTestAssess */,
+				BB87D21B219DC28D00CD4A5A /* TLIKTestAssessTests */,
+				BB87D226219DC28D00CD4A5A /* TLIKTestAssessUITests */,
+				BB87D205219DC28900CD4A5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB87D205219DC28900CD4A5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB87D204219DC28900CD4A5A /* TLIKTestAssess.app */,
+				BB87D218219DC28D00CD4A5A /* TLIKTestAssessTests.xctest */,
+				BB87D223219DC28D00CD4A5A /* TLIKTestAssessUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB87D206219DC28900CD4A5A /* TLIKTestAssess */ = {
+			isa = PBXGroup;
+			children = (
+				BB87D238219DC6A500CD4A5A /* MostPopular */,
+				BB87D235219DC3D300CD4A5A /* Custom */,
+				BB87D207219DC28900CD4A5A /* AppDelegate.swift */,
+				BB87D209219DC28900CD4A5A /* MostViewedHomeViewController.swift */,
+				BB87D20E219DC28D00CD4A5A /* Assets.xcassets */,
+				BB87D210219DC28D00CD4A5A /* LaunchScreen.storyboard */,
+				BB87D213219DC28D00CD4A5A /* Info.plist */,
+			);
+			path = TLIKTestAssess;
+			sourceTree = "<group>";
+		};
+		BB87D21B219DC28D00CD4A5A /* TLIKTestAssessTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB87D21C219DC28D00CD4A5A /* TLIKTestAssessTests.swift */,
+				BB87D21E219DC28D00CD4A5A /* Info.plist */,
+			);
+			path = TLIKTestAssessTests;
+			sourceTree = "<group>";
+		};
+		BB87D226219DC28D00CD4A5A /* TLIKTestAssessUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB87D227219DC28D00CD4A5A /* TLIKTestAssessUITests.swift */,
+				BB87D229219DC28D00CD4A5A /* Info.plist */,
+			);
+			path = TLIKTestAssessUITests;
+			sourceTree = "<group>";
+		};
+		BB87D235219DC3D300CD4A5A /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				BB87D236219DC41400CD4A5A /* TLIKNavigationController.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		BB87D238219DC6A500CD4A5A /* MostPopular */ = {
+			isa = PBXGroup;
+			children = (
+				BB87D239219DC6D400CD4A5A /* MostPopularTableViewCell.swift */,
+				BB87D23A219DC6D400CD4A5A /* MostPopularTableViewCell.xib */,
+			);
+			path = MostPopular;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB87D203219DC28900CD4A5A /* TLIKTestAssess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB87D22C219DC28D00CD4A5A /* Build configuration list for PBXNativeTarget "TLIKTestAssess" */;
+			buildPhases = (
+				BB87D200219DC28900CD4A5A /* Sources */,
+				BB87D201219DC28900CD4A5A /* Frameworks */,
+				BB87D202219DC28900CD4A5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TLIKTestAssess;
+			productName = TLIKTestAssess;
+			productReference = BB87D204219DC28900CD4A5A /* TLIKTestAssess.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB87D217219DC28D00CD4A5A /* TLIKTestAssessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB87D22F219DC28D00CD4A5A /* Build configuration list for PBXNativeTarget "TLIKTestAssessTests" */;
+			buildPhases = (
+				BB87D214219DC28D00CD4A5A /* Sources */,
+				BB87D215219DC28D00CD4A5A /* Frameworks */,
+				BB87D216219DC28D00CD4A5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB87D21A219DC28D00CD4A5A /* PBXTargetDependency */,
+			);
+			name = TLIKTestAssessTests;
+			productName = TLIKTestAssessTests;
+			productReference = BB87D218219DC28D00CD4A5A /* TLIKTestAssessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB87D222219DC28D00CD4A5A /* TLIKTestAssessUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB87D232219DC28D00CD4A5A /* Build configuration list for PBXNativeTarget "TLIKTestAssessUITests" */;
+			buildPhases = (
+				BB87D21F219DC28D00CD4A5A /* Sources */,
+				BB87D220219DC28D00CD4A5A /* Frameworks */,
+				BB87D221219DC28D00CD4A5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB87D225219DC28D00CD4A5A /* PBXTargetDependency */,
+			);
+			name = TLIKTestAssessUITests;
+			productName = TLIKTestAssessUITests;
+			productReference = BB87D223219DC28D00CD4A5A /* TLIKTestAssessUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB87D1FC219DC28900CD4A5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = ishteyaque;
+				TargetAttributes = {
+					BB87D203219DC28900CD4A5A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					BB87D217219DC28D00CD4A5A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BB87D203219DC28900CD4A5A;
+					};
+					BB87D222219DC28D00CD4A5A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BB87D203219DC28900CD4A5A;
+					};
+				};
+			};
+			buildConfigurationList = BB87D1FF219DC28900CD4A5A /* Build configuration list for PBXProject "TLIKTestAssess" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB87D1FB219DC28900CD4A5A;
+			productRefGroup = BB87D205219DC28900CD4A5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB87D203219DC28900CD4A5A /* TLIKTestAssess */,
+				BB87D217219DC28D00CD4A5A /* TLIKTestAssessTests */,
+				BB87D222219DC28D00CD4A5A /* TLIKTestAssessUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB87D202219DC28900CD4A5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB87D212219DC28D00CD4A5A /* LaunchScreen.storyboard in Resources */,
+				BB87D23C219DC6D400CD4A5A /* MostPopularTableViewCell.xib in Resources */,
+				BB87D20F219DC28D00CD4A5A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB87D216219DC28D00CD4A5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB87D221219DC28D00CD4A5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB87D200219DC28900CD4A5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB87D20A219DC28900CD4A5A /* MostViewedHomeViewController.swift in Sources */,
+				BB87D237219DC41400CD4A5A /* TLIKNavigationController.swift in Sources */,
+				BB87D23B219DC6D400CD4A5A /* MostPopularTableViewCell.swift in Sources */,
+				BB87D208219DC28900CD4A5A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB87D214219DC28D00CD4A5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB87D21D219DC28D00CD4A5A /* TLIKTestAssessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB87D21F219DC28D00CD4A5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB87D228219DC28D00CD4A5A /* TLIKTestAssessUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB87D21A219DC28D00CD4A5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB87D203219DC28900CD4A5A /* TLIKTestAssess */;
+			targetProxy = BB87D219219DC28D00CD4A5A /* PBXContainerItemProxy */;
+		};
+		BB87D225219DC28D00CD4A5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB87D203219DC28900CD4A5A /* TLIKTestAssess */;
+			targetProxy = BB87D224219DC28D00CD4A5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB87D210219DC28D00CD4A5A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB87D211219DC28D00CD4A5A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB87D22A219DC28D00CD4A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB87D22B219DC28D00CD4A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB87D22D219DC28D00CD4A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TLIKTestAssess/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ishteyaque.TLIKTestAssess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB87D22E219DC28D00CD4A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TLIKTestAssess/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ishteyaque.TLIKTestAssess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB87D230219DC28D00CD4A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TLIKTestAssessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ishteyaque.TLIKTestAssessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TLIKTestAssess.app/TLIKTestAssess";
+			};
+			name = Debug;
+		};
+		BB87D231219DC28D00CD4A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TLIKTestAssessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ishteyaque.TLIKTestAssessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TLIKTestAssess.app/TLIKTestAssess";
+			};
+			name = Release;
+		};
+		BB87D233219DC28D00CD4A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TLIKTestAssessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ishteyaque.TLIKTestAssessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TLIKTestAssess;
+			};
+			name = Debug;
+		};
+		BB87D234219DC28D00CD4A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TLIKTestAssessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ishteyaque.TLIKTestAssessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TLIKTestAssess;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB87D1FF219DC28900CD4A5A /* Build configuration list for PBXProject "TLIKTestAssess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB87D22A219DC28D00CD4A5A /* Debug */,
+				BB87D22B219DC28D00CD4A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB87D22C219DC28D00CD4A5A /* Build configuration list for PBXNativeTarget "TLIKTestAssess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB87D22D219DC28D00CD4A5A /* Debug */,
+				BB87D22E219DC28D00CD4A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB87D22F219DC28D00CD4A5A /* Build configuration list for PBXNativeTarget "TLIKTestAssessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB87D230219DC28D00CD4A5A /* Debug */,
+				BB87D231219DC28D00CD4A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB87D232219DC28D00CD4A5A /* Build configuration list for PBXNativeTarget "TLIKTestAssessUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB87D233219DC28D00CD4A5A /* Debug */,
+				BB87D234219DC28D00CD4A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB87D1FC219DC28900CD4A5A /* Project object */;
+}
