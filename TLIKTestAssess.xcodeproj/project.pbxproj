@@ -16,6 +16,14 @@
 		BB87D237219DC41400CD4A5A /* TLIKNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87D236219DC41400CD4A5A /* TLIKNavigationController.swift */; };
 		BB87D23B219DC6D400CD4A5A /* MostPopularTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87D239219DC6D400CD4A5A /* MostPopularTableViewCell.swift */; };
 		BB87D23C219DC6D400CD4A5A /* MostPopularTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB87D23A219DC6D400CD4A5A /* MostPopularTableViewCell.xib */; };
+		BB87D23F219E897100CD4A5A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87D23E219E897100CD4A5A /* DetailsViewController.swift */; };
+		BB87D242219E8A1400CD4A5A /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87D240219E8A1400CD4A5A /* DetailsTableViewCell.swift */; };
+		BB87D243219E8A1400CD4A5A /* DetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB87D241219E8A1400CD4A5A /* DetailsTableViewCell.xib */; };
+		BB87D245219E8B6F00CD4A5A /* UIImageView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87D244219E8B6F00CD4A5A /* UIImageView_Extension.swift */; };
+		BB87D249219E92DD00CD4A5A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87D247219E92DD00CD4A5A /* Reachability.swift */; };
+		BB87D24A219E92DD00CD4A5A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87D248219E92DD00CD4A5A /* APIClient.swift */; };
+		BB87D24C219E94B600CD4A5A /* PopularNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87D24B219E94B600CD4A5A /* PopularNews.swift */; };
+		BB87D250219E9E8F00CD4A5A /* UIViewController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87D24F219E9E8F00CD4A5A /* UIViewController_Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,14 @@
 		BB87D236219DC41400CD4A5A /* TLIKNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLIKNavigationController.swift; sourceTree = "<group>"; };
 		BB87D239219DC6D400CD4A5A /* MostPopularTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularTableViewCell.swift; sourceTree = "<group>"; };
 		BB87D23A219DC6D400CD4A5A /* MostPopularTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularTableViewCell.xib; sourceTree = "<group>"; };
+		BB87D23E219E897100CD4A5A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		BB87D240219E8A1400CD4A5A /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
+		BB87D241219E8A1400CD4A5A /* DetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsTableViewCell.xib; sourceTree = "<group>"; };
+		BB87D244219E8B6F00CD4A5A /* UIImageView_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView_Extension.swift; sourceTree = "<group>"; };
+		BB87D247219E92DD00CD4A5A /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		BB87D248219E92DD00CD4A5A /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		BB87D24B219E94B600CD4A5A /* PopularNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularNews.swift; sourceTree = "<group>"; };
+		BB87D24F219E9E8F00CD4A5A /* UIViewController_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController_Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +117,12 @@
 		BB87D206219DC28900CD4A5A /* TLIKTestAssess */ = {
 			isa = PBXGroup;
 			children = (
-				BB87D238219DC6A500CD4A5A /* MostPopular */,
+				BB87D24E219E968900CD4A5A /* PopularHome */,
+				BB87D24D219E95BF00CD4A5A /* Model */,
+				BB87D246219E929500CD4A5A /* APICall */,
+				BB87D23D219E893D00CD4A5A /* DetailsView */,
 				BB87D235219DC3D300CD4A5A /* Custom */,
 				BB87D207219DC28900CD4A5A /* AppDelegate.swift */,
-				BB87D209219DC28900CD4A5A /* MostViewedHomeViewController.swift */,
 				BB87D20E219DC28D00CD4A5A /* Assets.xcassets */,
 				BB87D210219DC28D00CD4A5A /* LaunchScreen.storyboard */,
 				BB87D213219DC28D00CD4A5A /* Info.plist */,
@@ -134,17 +152,47 @@
 			isa = PBXGroup;
 			children = (
 				BB87D236219DC41400CD4A5A /* TLIKNavigationController.swift */,
+				BB87D244219E8B6F00CD4A5A /* UIImageView_Extension.swift */,
+				BB87D24F219E9E8F00CD4A5A /* UIViewController_Extension.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
 		};
-		BB87D238219DC6A500CD4A5A /* MostPopular */ = {
+		BB87D23D219E893D00CD4A5A /* DetailsView */ = {
 			isa = PBXGroup;
 			children = (
+				BB87D23E219E897100CD4A5A /* DetailsViewController.swift */,
+				BB87D240219E8A1400CD4A5A /* DetailsTableViewCell.swift */,
+				BB87D241219E8A1400CD4A5A /* DetailsTableViewCell.xib */,
+			);
+			path = DetailsView;
+			sourceTree = "<group>";
+		};
+		BB87D246219E929500CD4A5A /* APICall */ = {
+			isa = PBXGroup;
+			children = (
+				BB87D248219E92DD00CD4A5A /* APIClient.swift */,
+				BB87D247219E92DD00CD4A5A /* Reachability.swift */,
+			);
+			path = APICall;
+			sourceTree = "<group>";
+		};
+		BB87D24D219E95BF00CD4A5A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB87D24B219E94B600CD4A5A /* PopularNews.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB87D24E219E968900CD4A5A /* PopularHome */ = {
+			isa = PBXGroup;
+			children = (
+				BB87D209219DC28900CD4A5A /* MostViewedHomeViewController.swift */,
 				BB87D239219DC6D400CD4A5A /* MostPopularTableViewCell.swift */,
 				BB87D23A219DC6D400CD4A5A /* MostPopularTableViewCell.xib */,
 			);
-			path = MostPopular;
+			path = PopularHome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +301,7 @@
 			files = (
 				BB87D212219DC28D00CD4A5A /* LaunchScreen.storyboard in Resources */,
 				BB87D23C219DC6D400CD4A5A /* MostPopularTableViewCell.xib in Resources */,
+				BB87D243219E8A1400CD4A5A /* DetailsTableViewCell.xib in Resources */,
 				BB87D20F219DC28D00CD4A5A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,10 +327,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB87D242219E8A1400CD4A5A /* DetailsTableViewCell.swift in Sources */,
 				BB87D20A219DC28900CD4A5A /* MostViewedHomeViewController.swift in Sources */,
+				BB87D24C219E94B600CD4A5A /* PopularNews.swift in Sources */,
+				BB87D245219E8B6F00CD4A5A /* UIImageView_Extension.swift in Sources */,
+				BB87D249219E92DD00CD4A5A /* Reachability.swift in Sources */,
 				BB87D237219DC41400CD4A5A /* TLIKNavigationController.swift in Sources */,
+				BB87D250219E9E8F00CD4A5A /* UIViewController_Extension.swift in Sources */,
 				BB87D23B219DC6D400CD4A5A /* MostPopularTableViewCell.swift in Sources */,
 				BB87D208219DC28900CD4A5A /* AppDelegate.swift in Sources */,
+				BB87D23F219E897100CD4A5A /* DetailsViewController.swift in Sources */,
+				BB87D24A219E92DD00CD4A5A /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

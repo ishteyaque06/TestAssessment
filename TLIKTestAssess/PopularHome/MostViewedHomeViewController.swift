@@ -9,9 +9,9 @@
 import UIKit
 
 class MostViewedHomeViewController: UIViewController {
-let imageURL="https://www.nytimes.com/2018/11/14/technology/facebook-data-russia-election-racism.html?action=click&module=Top%20Stories&pgtype=Homepage"
     let tableView=UITableView()
     var jsonData=[MostpopularModel]()
+    var activityIndicatorView: UIActivityIndicatorView!
     override func loadView() {
         super.loadView()
         self.view.addSubview(tableView)
@@ -32,19 +32,46 @@ let imageURL="https://www.nytimes.com/2018/11/14/technology/facebook-data-russia
         tableView.rowHeight = UITableView.automaticDimension
         tableView.separatorStyle = .singleLine
         tableView.tableFooterView=UIView(frame: .zero)
-        populateData()
+        activityIndicatorView = UIActivityIndicatorView(style: .gray)
+        activityIndicatorView.hidesWhenStopped=true
+        tableView.backgroundView = activityIndicatorView
+        populateNewsData()
+    }
+    
+    func populateNewsData(){
+        activityIndicatorView.startAnimating()
+       let _ = APIClient.sharedClient.load(path: EndPoint.mostviewedNews.rawValue, method: .get, params: [:]) { (newsdata, error) in
+        if error != nil{
+            DispatchQueue.main.async {
+                self.showAlert(message: error?.errorDescription)
+            }
+            return
+        }else{
+            if let jsonData=newsdata as? [String:Any]{
+                if let result=jsonData["results"]as?[[String:Any]]{
+                    for res in result{
+                        if let model=MostpopularModel(jsonData: res){
+                        self.jsonData.append(model)
+                        }
+                    }
+                    DispatchQueue.main.async {
+                        self.activityIndicatorView.stopAnimating()
+                        self.tableView.reloadData()
+                    }
+                }
+                
+            }
+        }
+        }
     }
 
-    func populateData(){
-        jsonData.append(MostpopularModel(popularTitle: "Sherrod Brown: Rumpled, Unvarnished and Just Maybe a Candidate for President,Delay, Deny and Deflect: How Facebook’s Leaders Fought Through Crisis", authorTitle: " By Sydney Ember", dateLabel: "Nov. 14, 2018", imageUrl: imageURL))
-        jsonData.append(MostpopularModel(popularTitle: "Sherrod Brown: Rumpled, Unvarnished and Just Maybe a Candidate for President", authorTitle: "By Sheera Frenkel, Nicholas Confessore, Cecilia Kang, Matthew Rosenberg and Jack Nicas", dateLabel: "Nov. 14, 2018", imageUrl: imageURL))
-        jsonData.append(MostpopularModel(popularTitle: "Sherrod Brown: Rumpled, Unvarnished and Just Maybe a Candidate for President,Delay, Deny and Deflect: How Facebook’s Leaders Fought Through Crisis", authorTitle: "By Sheera Frenkel, Nicholas Confessore, Cecilia Kang, Matthew Rosenberg and Jack Nicas", dateLabel: "Nov. 14, 2018", imageUrl: imageURL))
-        jsonData.append(MostpopularModel(popularTitle: "Sherrod Brown: Rumpled, Unvarnished and Just Maybe a Candidate for President,Delay, Deny and Deflect: How Facebook’s Leaders Fought Through Crisis", authorTitle: "By Sydney Ember", dateLabel: "Nov. 14, 2018", imageUrl: imageURL))
-        jsonData.append(MostpopularModel(popularTitle: "Sherrod Brown: Rumpled, Unvarnished and Just Maybe a Candidate for President", authorTitle: "By Sheera Frenkel, Nicholas Confessore, Cecilia Kang, Matthew Rosenberg and Jack Nicas", dateLabel: "Nov. 14, 2018", imageUrl: imageURL))
-    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.title="NY Times More Popular"
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        self.title=""
     }
 
 }
@@ -63,5 +90,17 @@ extension MostViewedHomeViewController:UITableViewDelegate,UITableViewDataSource
         cell.mostPopular=self.jsonData[indexPath.row]
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    self.navigateToDetails(index: indexPath.row)
+    }
    
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        self.navigateToDetails(index: indexPath.row)
+    }
+    func navigateToDetails(index:Int){
+        let detailsVc=DetailsViewController()
+        detailsVc.newsData=self.jsonData[index]
+        self.navigationController?.pushViewController(detailsVc, animated: true)
+    }
 }
